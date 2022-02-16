@@ -1,0 +1,18 @@
+def  First_digit(num):
+    while(num>=10):
+        num=num//10
+    
+    return num
+
+def  last_digit(num):
+    last=num%10
+       
+    return last
+  
+if __name__ == '__main__':
+    dig=int(input("Enter any number u want to print first and last digit:"))
+    f=First_digit(dig)
+    l=last_digit(dig)
+    print(f"First digit of {dig} is :",f)
+    print(f"last digit of {dig} is :",l)
+    
